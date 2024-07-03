@@ -1,0 +1,23 @@
+:root {
+  --text-color: #333333;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color);
+}
+
+.form {
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+}
