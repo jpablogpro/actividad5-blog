@@ -14,7 +14,7 @@ export class BlogComponent {
   newNoticia: Inoticia = { title: "", url: "", text: "", date: ""}
   arrNoticias: Inoticia[] = [
     {
-      title: 'La selección española se clasfica para las semifinales de la Eurocopa',
+      title: 'La selección española se clasifica para las semifinales de la Eurocopa',
       url: 'images/seleccion.jpeg',
       text: `Pedía a gritos España los penaltis, sangraba, dolorida, maltrecha,
         achatada primero por unos cambios desafortunados y después por una
@@ -59,5 +59,16 @@ export class BlogComponent {
     this.arrNoticias.push(this.newNoticia);
     console.log(this.arrNoticias)
     this.newNoticia = { title: "", url: "", text: "", date: ""}
+  }
+
+  cargarNoticias(): string {
+    let html: string = "";
+    this.arrNoticias.slice(2).forEach((noticia: Inoticia) => {
+      html += `<article><h4>${noticia.title}</h4>
+               <div>${noticia.date}</div><p>${noticia.text}</p>
+               <img src="${noticia.url}" alt="${noticia.title}" />
+               </article><hr />`;
+    })    
+    return html;
   }
 }
