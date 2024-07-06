@@ -7,11 +7,17 @@
         id="title"
         type="text"
         placeholder="introduce el titulo de la noticia"
+        [(ngModel)]="newNoticia.title"
       />
     </div>
     <div class="form-section">
       <label for="url">URL de la imagen</label>
-      <input id="url" type="url" placeholder="introduce url de la imagen" />
+      <input
+        id="url"
+        type="url"
+        placeholder="introduce url de la imagen"
+        [(ngModel)]="newNoticia.url"
+      />
     </div>
     <div class="form-section">
       <label for="body">Cuerpo de la noticia</label>
@@ -19,6 +25,7 @@
         id="body"
         type="text"
         placeholder="introduce el texto de la noticia"
+        [(ngModel)]="newNoticia.text"
       />
     </div>
     <div class="form-section">
@@ -27,9 +34,10 @@
         id="date"
         type="date"
         placeholder="introduce la fecha de publicacion"
+        [(ngModel)]="newNoticia.date"
       />
     </div>
-    <button>Guardar</button>
+    <button (click)="guardarnoticia()">Guardar</button>
   </div>
 </section>
 <hr />

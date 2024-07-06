@@ -1,15 +1,17 @@
 import { Component } from '@angular/core';
 import { Inoticia } from '../../interfaces/Inoticia.interface';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-blog',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.css'
 })
 export class BlogComponent {
   
+  newNoticia: Inoticia = { title: "", url: "", text: "", date: ""}
   arrNoticias: Inoticia[] = [
     {
       title: 'La selección española se clasfica para las semifinales de la Eurocopa',
@@ -52,4 +54,10 @@ export class BlogComponent {
       date: '2024-07-06'
     }
   ]
+
+  guardarnoticia() {
+    this.arrNoticias.push(this.newNoticia);
+    console.log(this.arrNoticias)
+    this.newNoticia = { title: "", url: "", text: "", date: ""}
+  }
 }
