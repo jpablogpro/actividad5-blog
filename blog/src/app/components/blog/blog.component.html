@@ -43,8 +43,8 @@
 <hr />
 <section>
   <h2>Noticias</h2>
-  <div class="news-wrapper">
-    <article>
+  <ul class="news-wrapper">
+    <li class="li-news">
       <h4>
         {{ arrNoticias[0].title }}
       </h4>
@@ -52,10 +52,10 @@
       <p>
         {{ arrNoticias[0].text }}
       </p>
-      <img src="{{ arrNoticias[0].url }}" alt="{{ arrNoticias[0].title }}" />
-    </article>
+      <img [src]="arrNoticias[0].url" [alt]="arrNoticias[0].title" />
+    </li>
     <hr />
-    <article>
+    <li class="li-news">
       <h4>
         {{ arrNoticias[1].title }}
       </h4>
@@ -63,9 +63,9 @@
       <p>
         {{ arrNoticias[1].text }}
       </p>
-      <img src="{{ arrNoticias[1].url }}" alt="{{ arrNoticias[1].title }}" />
-    </article>
+      <img [src]="arrNoticias[1].url" [alt]="arrNoticias[1].title" />
+    </li>
     <hr />
-  </div>
-  <div [innerHTML]="cargarNoticias()"></div>
+  </ul>
+  <ul class="news-wrapper" [innerHTML]="cargarNoticias()"></ul>
 </section>
