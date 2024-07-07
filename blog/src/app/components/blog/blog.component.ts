@@ -31,8 +31,11 @@ export class BlogComponent {
   ]
 
   guardarnoticia() {
-    this.arrNoticias.push(this.newNoticia);
-    console.log(this.arrNoticias)
+    console.log(this.newNoticia)
+    if (this.newNoticia.title !== "" && this.newNoticia.date !== "" &&
+        this.newNoticia.text !== "" && this.newNoticia.url !== "") {
+          this.arrNoticias.push(this.newNoticia);
+        }
     this.newNoticia = { title: "", url: "", text: "", date: ""}
   }
 
