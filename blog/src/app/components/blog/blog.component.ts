@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { Inoticia } from '../../interfaces/Inoticia.interface';
 import { FormsModule } from '@angular/forms';
 
@@ -7,7 +7,8 @@ import { FormsModule } from '@angular/forms';
   standalone: true,
   imports: [FormsModule],
   templateUrl: './blog.component.html',
-  styleUrl: './blog.component.css'
+  styleUrl: './blog.component.css',
+  encapsulation: ViewEncapsulation.None,
 })
 export class BlogComponent {
   
@@ -38,10 +39,10 @@ export class BlogComponent {
   cargarNoticias(): string {
     let html: string = "";
     this.arrNoticias.slice(2).forEach((noticia: Inoticia) => {
-      html += `<article><h4>${noticia.title}</h4>
+      html += `<li class="li-news"><h4>${noticia.title}</h4>
                <div>${noticia.date}</div><p>${noticia.text}</p>
                <img src="${noticia.url}" alt="${noticia.title}" />
-               </article><hr />`;
+               <hr /></li>`;
     })    
     return html;
   }

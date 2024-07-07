@@ -56,8 +56,8 @@
         {{ arrNoticias[0].text }}
       </p>
       <img [src]="arrNoticias[0].url" [alt]="arrNoticias[0].title" />
+      <hr />
     </li>
-    <hr />
     <li class="li-news">
       <h4>
         {{ arrNoticias[1].title }}
@@ -67,8 +67,8 @@
         {{ arrNoticias[1].text }}
       </p>
       <img [src]="arrNoticias[1].url" [alt]="arrNoticias[1].title" />
+      <hr />
     </li>
-    <hr />
   </ul>
-  <ul class="news-wrapper" [innerHTML]="cargarNoticias()"></ul>
+  <ul [innerHTML]="cargarNoticias()" class="news-wrapper"></ul>
 </section>
