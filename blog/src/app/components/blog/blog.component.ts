@@ -16,41 +16,15 @@ export class BlogComponent {
     {
       title: 'La selección española se clasifica para las semifinales de la Eurocopa',
       url: 'images/seleccion.jpeg',
-      text: `Pedía a gritos España los penaltis, sangraba, dolorida, maltrecha,
-        achatada primero por unos cambios desafortunados y después por una
-        máquina de armar ruido, Alemania, a la que con empujones y centros le
-        bastó para acariciar las semifinales. Pedía a gritos España los
-        penaltis, suplicaba por ellos, boqueando tras un ejercicio de
-        supervivencia en la prórroga, olvidada una primera hora más que
-        aceptable. Pedía a gritos España los penaltis, herida de muerte ante un
-        rival enfebrecido, donde hasta Toni Kroos, triste adiós el suyo debiendo
-        estar en el vestuario antes de tiempo, aguantaba los gemelos en la boca.
-        Pedía España a gritos los penaltis cuando Dani Olmo, el mejor, encontró
-        milagrosamente la cabeza de Mikel Merino, que remató de forma
-        inverosímil una pelota maravillosa para sepultar a la anfitriona por
-        primera vez en la historia, primero, y disparar, después, el sueño de
-        España, que pedía a gritos los penaltis, que rogaba por ellos, que
-        imploraba por ellos, pero que estará en semifinales tras una tarde
-        inolvidable y agónica en Stuttgart, donde incluso el árbitro se inhibió
-        en una mano de Cururella que tenía toda la pinta de penalti.`,
+      text: `Partido épico en estos cuartos de final, con un triunfo de España con goles de dos suplentes, Olmo y Merino. España pasa a las semifinales y jubila a Kroos. Histórica victoria ante Alemania por 2-1. 
+      Partidazo de Olmo, que metió el gol de España y después fue capaz de dar un pase de gol fantástico a Merino. Además, Olmo fue el único jugador de España que supo jugar la prórroga. España jugará la semifinal de la Eurocopa el próximo martes, a las 21.00 horas, después de un maravilloso partido en el que ha derrotado a Alemania.`,
       date: '2024-07-06'
     },
     {
       title: 'Pamplona da la bienvenida a los Sanfermines 2024 con un chupinazo multitudinario',
       url: 'images/sanfermines.jpeg',
-      text: `Amaneció nublado el cielo, húmedo el clima, con las muescas en el suelo
-        de la formidable tormenta que sacudió Pamplona la noche anterior. Las
-        cuadrillas de veteranos y noveles caminaban temprano por las calles
-        camino del almuerzo, la tradición y el entusiasmo. Huevos con jamón y
-        chistorra, magras con tomate, platos de ajoarriero, manitas y otros
-        excesos para la colesterolemia a modo de precalentamiento de la jornada.
-        Es un modo invariable de celebración el sanferminero, el orden en el
-        caos, la fiesta al límite, la vida a muerte y la muerte a risa. Cuando
-        quedaban 120 minutos para descorchar 204 horas de éxtasis
-        ininterrumpido, los uniformes blancos esperaban la unción del pañuelico
-        rojo bautizándose de vino. Las mesas kilométricas se prolongaban por las
-        distintas calles de la ciudad como la imagen presentida de la fiesta
-        infinita.`,
+      text: `Pamplona ha estallado en una fiesta de color blanco y rojo tras el lanzamiento, al mediodía de este sábado, del chupinazo que ha dado inicio a los Sanfermines 2024, que se prolongarán, como es tradición, hasta el 14 de julio.
+      Pamplonesas, pamploneses, ¡Viva San Fermín!, ¡Gora San Fermín!", han proclamado desde el balcón del Ayuntamiento tres representantes del grupo de danza Duguna, que en el año de su 75 aniversario ha sido la candidatura más votada de las cinco promovidas por la Mesa de San Fermín.`,
       date: '2024-07-06'
     }
   ]
