@@ -33,14 +33,14 @@ export class BlogComponent {
   guardarnoticia() {
     if (this.newNoticia.title === "" || this.newNoticia.date === "" ||
         this.newNoticia.text === "" || this.newNoticia.url === "") {
-          if (this.newNoticia.title === "") {
-            this.newNoticia.title = "Falta introducir el titulo"
-            setTimeout(() => { this.newNoticia.title = "" }, 2500)
-          } 
           if (this.newNoticia.date === "") {
             let titleTMP = this.newNoticia.title 
             this.newNoticia.title = "Falta introducir la fecha de publicacion"
-            setTimeout(() => { this.newNoticia.title = titleTMP }, 2500)
+            setTimeout(() => { this.newNoticia.title = titleTMP }, 500)
+          } 
+          if (this.newNoticia.title === "") {
+            this.newNoticia.title = "Falta introducir el titulo"
+            setTimeout(() => { this.newNoticia.title = "" }, 2500)
           } 
           if (this.newNoticia.text === "") {
             this.newNoticia.text = "Falta introducir el texto de la noticia"
