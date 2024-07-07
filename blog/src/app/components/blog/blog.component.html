@@ -20,15 +20,6 @@
       />
     </div>
     <div class="form-section">
-      <label for="body">Cuerpo de la noticia</label>
-      <input
-        id="body"
-        type="text"
-        placeholder="introduce el texto de la noticia"
-        [(ngModel)]="newNoticia.text"
-      />
-    </div>
-    <div class="form-section">
       <label for="date">Fecha de la noticia</label>
       <input
         id="date"
@@ -37,6 +28,18 @@
         [(ngModel)]="newNoticia.date"
       />
     </div>
+    <div class="form-section">
+      <label for="body">Cuerpo de la noticia</label>
+      <textarea
+        id="body"
+        class="caja-cuerpo"
+        type="text"
+        placeholder="introduce el texto de la noticia"
+        [(ngModel)]="newNoticia.text"
+      >
+      </textarea>
+    </div>
+
     <button (click)="guardarnoticia()">Guardar</button>
   </div>
 </section>
