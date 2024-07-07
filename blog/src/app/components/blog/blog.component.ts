@@ -31,11 +31,30 @@ export class BlogComponent {
   ]
 
   guardarnoticia() {
-    if (this.newNoticia.title !== "" && this.newNoticia.date !== "" &&
-        this.newNoticia.text !== "" && this.newNoticia.url !== "") {
-          this.arrNoticias.push(this.newNoticia);
+    if (this.newNoticia.title === "" || this.newNoticia.date === "" ||
+        this.newNoticia.text === "" || this.newNoticia.url === "") {
+          if (this.newNoticia.title === "") {
+            this.newNoticia.title = "Falta introducir el titulo"
+            setTimeout(() => { this.newNoticia.title = "" }, 2500)
+          } 
+          if (this.newNoticia.date === "") {
+            let titleTMP = this.newNoticia.title 
+            this.newNoticia.title = "Falta introducir la fecha de publicacion"
+            setTimeout(() => { this.newNoticia.title = titleTMP }, 2500)
+          } 
+          if (this.newNoticia.text === "") {
+            this.newNoticia.text = "Falta introducir el texto de la noticia"
+            setTimeout(() => { this.newNoticia.text = "" }, 2500)
+          } 
+          if (this.newNoticia.url === "") {
+            this.newNoticia.url = "Falta introducir el url de la imagen"
+            setTimeout(() => { this.newNoticia.url = "" }, 2500)
+          }
         }
-    this.newNoticia = { title: "", url: "", text: "", date: ""}
+    else {
+      this.arrNoticias.push(this.newNoticia);
+      this.newNoticia = { title: "", url: "", text: "", date: ""}
+    }
   }
 
   cargarNoticias(): string {
